@@ -1,0 +1,17 @@
+name: Indestructible
+version: '1.0.0'
+main: dev.indestructible.IndestructiblePlugin
+api-version: '1.21'
+description: Makes the item you are holding impossible to destroy.
+
+commands:
+  indestructible:
+    description: Toggle indestructible on the item in your main hand.
+    usage: /<command>
+    aliases: [indestruct, nodestroy]
+    permission: indestructible.use
+
+permissions:
+  indestructible.use:
+    description: Allows making items indestructible.
+    default: op
